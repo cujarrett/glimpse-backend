@@ -1,3 +1,4 @@
+const { name, version } = require("../../package.json")
 const { getContributionYears, getRawContributionData } = require("../integrations/github.js")
 
 module.exports.getFormattedContributionsByYear = (contributions) => {
@@ -87,7 +88,14 @@ module.exports.contributions = async (api) => {
       const years = await getContributionYears(username)
       const rawContributionData = await getRawContributionData(username, years)
       const contributions = this.getFormattedContributionsByYear(rawContributionData)
-      return JSON.stringify(contributions, null, "  ")
+      const response = {
+        contributions,
+        metadata: {
+          name,
+          version
+        }
+      }
+      return JSON.stringify(response, null, "  ")
     } catch (error) {
       console.log(error)
     }
