@@ -7,7 +7,6 @@
     "lint": "eslint .",
     "fix-lint": "eslint . --fix",
     "test": "nyc --reporter=lcov tape test/**/*.js | tap-spec && nyc report",
-    "build-cached-mods": "node -e 'require(\"./src/util/build-cached-mods.js\").printNewCachedMods()'",
     "build": "npm install --production && rm -rf build && mkdir build && zip -r -q -x='*test*' -x='package-lock.json' -x='*media*' -x='*terraform*' -x=*coverage* -x='*.md' -x='LICENSE' -x='*build*' -x='*.DS_Store*' -x='*.git*' -x='release.config.js' -x='commitlint.config.js' build/glimpse-backend.zip . && du -sh build",
     "deploy": "aws lambda update-function-code --function-name=glimpse-backend --zip-file=fileb://build/glimpse-backend.zip --region=us-east-1 1> /dev/null",
     "semantic-release": "semantic-release",
