@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+# [0.3.0](https://github.com/cujarrett/glimpse-backend/compare/v0.2.0...v0.3.0) (2021-07-09)
+
+
+### Features
+
+* adds CORS support ([#6](https://github.com/cujarrett/glimpse-backend/issues/6)) ([3c6aede](https://github.com/cujarrett/glimpse-backend/commit/3c6aede70a3e133955cc10c7907e3ee9786a052b))
+
 # [0.2.0](https://github.com/cujarrett/glimpse-backend/compare/v0.1.0...v0.2.0) (2021-07-08)
 
 
