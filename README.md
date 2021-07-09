@@ -9,6 +9,14 @@
 
 It's an implementation of interacting with GitHub to gather historic contribution data.
 
+## Use
+
+It's intended for personal use. Don't abuse the API.
+
+### [/github?username=foo](https://api.glimpse.ninja/github?username=foo)
+
+Returns GitHub historic contribution data for a user
+
 <p align="center">
   Made with :heart:, JavaScript, and GitHub.
 </p>

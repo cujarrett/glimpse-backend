@@ -1,6 +1,6 @@
 const test = require("tape-async")
 // eslint-disable-next-line max-len
-const { getFormattedContributionsByYear } = require("../../src/routes/contributions.js")
+const { getFormattedContributionsByYear } = require("../../src/routes/github.js")
 
 test("Unit - contributions", async (assert) => {
   assert.plan(1)
