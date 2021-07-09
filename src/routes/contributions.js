@@ -81,21 +81,22 @@ module.exports.getFormattedContributionsByYear = (contributions) => {
 }
 
 module.exports.contributions = async (api) => {
-  api.get("/contributions", async (request) => {
+  api.get("/contributions", async (request, response) => {
     try {
       console.log("/contributions called")
+      response.header("Access-Control-Allow-Origin", "*")
       const { username } = request.query
       const years = await getContributionYears(username)
       const rawContributionData = await getRawContributionData(username, years)
       const contributions = this.getFormattedContributionsByYear(rawContributionData)
-      const response = {
+      const result = {
         contributions,
         metadata: {
           name,
           version
         }
       }
-      return JSON.stringify(response, null, "  ")
+      return JSON.stringify(result, null, "  ")
     } catch (error) {
       console.log(error)
     }
