@@ -8,3 +8,11 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 ### Features
 
 * initial app :tada: ([73bedfe](https://github.com/cujarrett/glimpse-backend/commit/73bedfe83794287208eca3e3a9e451d9ceb4d768))
+
+
+# [0.1.0](https://github.com/cujarrett/glimpse-backend/releases/tag/v0.1.0) (2021-07-08)
+
+
+### Features
+
+* initial boilerplate :yawning_face:
