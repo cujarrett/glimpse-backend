@@ -3,21 +3,21 @@ module "archive" {
 }
 
 module "iam" {
-  source = "./modules/iam"
+  source          = "./modules/iam"
   error_sns_topic = var.error_sns_topic
 }
 
 module "lambda" {
-  source = "./modules/lambda"
-  error_sns_topic = var.error_sns_topic
+  source                       = "./modules/lambda"
+  error_sns_topic              = var.error_sns_topic
   file-placeholder-output-path = module.archive.file-placeholder-output-path
-  glimpse-backend-role-arn = module.iam.glimpse-backend-role-arn
+  glimpse-backend-role-arn     = module.iam.glimpse-backend-role-arn
 }
 
 module "api-gateway" {
-  source = "./modules/api-gateway"
-  acm_certificate_arn = var.acm_certificate_arn
-  glimpse-backend-lambda-arn = module.lambda.glimpse-backend-lambda-arn
+  source                            = "./modules/api-gateway"
+  acm_certificate_arn               = var.acm_certificate_arn
+  glimpse-backend-lambda-arn        = module.lambda.glimpse-backend-lambda-arn
   glimpse-backend-lambda-invoke-arn = module.lambda.glimpse-backend-lambda-invoke-arn
 }
 
