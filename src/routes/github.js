@@ -80,10 +80,10 @@ module.exports.getFormattedContributionsByYear = (contributions) => {
   return output
 }
 
-module.exports.contributions = async (api) => {
-  api.get("/contributions", async (request, response) => {
+module.exports.github = async (api) => {
+  api.get("/github", async (request, response) => {
     try {
-      console.log("/contributions called")
+      console.log("/github called")
       response.header("Access-Control-Allow-Origin", "*")
       const { username } = request.query
       const years = await getContributionYears(username)
