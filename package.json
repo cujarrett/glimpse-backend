@@ -11,7 +11,8 @@
     "deploy": "aws lambda update-function-code --function-name=glimpse-backend --zip-file=fileb://build/glimpse-backend.zip --region=us-east-1 1> /dev/null",
     "semantic-release": "semantic-release",
     "ci": "npm run lint && npm run test",
-    "cd": "npm run build && npm run deploy"
+    "cd": "npm run build && npm run deploy",
+    "prepare": "husky install"
   },
   "contributors": [
     {
@@ -30,7 +31,7 @@
   },
   "homepage": "https://github.com/cujarrett/glimpse-backend#readme",
   "dependencies": {
-    "lambda-api": "~0.10.7",
+    "lambda-api": "~0.11.1",
     "node-fetch": "~2.6.1"
   },
   "devDependencies": {
@@ -45,10 +46,10 @@
     "@semantic-release/release-notes-generator": "~9.0.3",
     "commitizen": "~4.2.4",
     "cz-conventional-changelog": "~3.3.0",
-    "eslint": "~7.28.0",
-    "husky": "~4.3.8",
+    "eslint": "~7.30.0",
+    "husky": "~7.0.1",
     "nyc": "~15.1.0",
-    "semantic-release": "^17.4.3",
+    "semantic-release": "~17.4.4",
     "tap-spec": "~5.0.0",
     "tape-async": "~2.3.0"
   },
