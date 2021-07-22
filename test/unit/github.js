@@ -1,10 +1,7 @@
-const test = require("tape-async")
-// eslint-disable-next-line max-len
+const test = require("ava")
 const { getFormattedContributionsByYear } = require("../../src/routes/github.js")
 
 test("Unit - contributions", async (assert) => {
-  assert.plan(1)
-
   const mockInput = [
     {
       "count": 0,
@@ -1529,6 +1526,5 @@ test("Unit - contributions", async (assert) => {
   ]
 
   const actual = await getFormattedContributionsByYear(mockInput)
-  // eslint-disable-next-line max-len
-  assert.deepEqual(actual, expected, "getFormattedContributionsByYear returns formatted results verified")
+  assert.deepEqual(actual, expected)
 })
