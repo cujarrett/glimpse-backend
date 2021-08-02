@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.4.5](https://github.com/cujarrett/glimpse-backend/compare/v0.4.4...v0.4.5) (2021-08-02)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @commitlint/config-conventional ([#13](https://github.com/cujarrett/glimpse-backend/issues/13)) ([1b301dd](https://github.com/cujarrett/glimpse-backend/commit/1b301dd632e927a0a50169554efaf98dd4b30b16))
+
 ## [0.4.4](https://github.com/cujarrett/glimpse-backend/compare/v0.4.3...v0.4.4) (2021-08-02)
 
 
