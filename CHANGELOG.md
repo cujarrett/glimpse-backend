@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.4.10](https://github.com/cujarrett/glimpse-backend/compare/v0.4.9...v0.4.10) (2021-09-12)
+
+
+### Bug Fixes
+
+* updates dependabot settings ([b7c5951](https://github.com/cujarrett/glimpse-backend/commit/b7c595110a1f62fafb32ebb558dbffa446f827c0))
+
 ## [0.4.9](https://github.com/cujarrett/glimpse-backend/compare/v0.4.8...v0.4.9) (2021-09-12)
 
 
