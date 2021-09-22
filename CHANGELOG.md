@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.4.13](https://github.com/cujarrett/glimpse-backend/compare/v0.4.12...v0.4.13) (2021-09-22)
+
+
+### Bug Fixes
+
+* **deps:** bump node-fetch from 2.6.2 to 2.6.4 ([#25](https://github.com/cujarrett/glimpse-backend/issues/25)) ([dae8698](https://github.com/cujarrett/glimpse-backend/commit/dae8698f00dce55d6d0ce3817697d1e7acd8b491))
+
 ## [0.4.12](https://github.com/cujarrett/glimpse-backend/compare/v0.4.11...v0.4.12) (2021-09-22)
 
 
