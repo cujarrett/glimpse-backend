@@ -1,6 +1,6 @@
 {
   "name": "glimpse-backend",
-  "version": "0.4.20",
+  "version": "0.5.0",
   "description": "Backend for glimpse.ninja app",
   "main": "index.js",
   "scripts": {
