@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+# [0.7.0](https://github.com/cujarrett/glimpse-backend/compare/v0.6.0...v0.7.0) (2021-10-09)
+
+
+### Features
+
+* adds default terraform tags ([#34](https://github.com/cujarrett/glimpse-backend/issues/34)) ([27a7412](https://github.com/cujarrett/glimpse-backend/commit/27a741290c85c4d906e0f12a4aecce5c900da23b))
+
 # [0.6.0](https://github.com/cujarrett/glimpse-backend/compare/v0.5.1...v0.6.0) (2021-10-05)
 
 
