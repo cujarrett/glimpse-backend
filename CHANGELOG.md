@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.7.1](https://github.com/cujarrett/glimpse-backend/compare/v0.7.0...v0.7.1) (2021-10-12)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump eslint from 7.32.0 to 8.0.0 ([#35](https://github.com/cujarrett/glimpse-backend/issues/35)) ([2184f35](https://github.com/cujarrett/glimpse-backend/commit/2184f3560848c3441b1a9c37dd56e2836efc2af7))
+
 # [0.7.0](https://github.com/cujarrett/glimpse-backend/compare/v0.6.0...v0.7.0) (2021-10-09)
 
 
