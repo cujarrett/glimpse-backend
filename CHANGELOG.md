@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.7.6](https://github.com/cujarrett/glimpse-backend/compare/v0.7.5...v0.7.6) (2021-10-22)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump husky from 7.0.2 to 7.0.4 ([#40](https://github.com/cujarrett/glimpse-backend/issues/40)) ([4181255](https://github.com/cujarrett/glimpse-backend/commit/41812557b128e4e060e21a70c524be7f511260d1))
+
 ## [0.7.5](https://github.com/cujarrett/glimpse-backend/compare/v0.7.4...v0.7.5) (2021-10-21)
 
 
