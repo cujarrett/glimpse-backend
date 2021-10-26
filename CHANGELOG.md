@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.7.8](https://github.com/cujarrett/glimpse-backend/compare/v0.7.7...v0.7.8) (2021-10-26)
+
+
+### Bug Fixes
+
+* **deps:** bump lambda-api from 0.11.1 to 0.11.2 ([#42](https://github.com/cujarrett/glimpse-backend/issues/42)) ([a9b4095](https://github.com/cujarrett/glimpse-backend/commit/a9b40957af27dd4a3456dc7bbe4b0d94087067f2))
+
 ## [0.7.7](https://github.com/cujarrett/glimpse-backend/compare/v0.7.6...v0.7.7) (2021-10-26)
 
 
