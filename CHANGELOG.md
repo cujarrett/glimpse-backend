@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.7.16](https://github.com/cujarrett/glimpse-backend/compare/v0.7.15...v0.7.16) (2021-11-04)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @semantic-release/npm from 8.0.2 to 8.0.3 ([#50](https://github.com/cujarrett/glimpse-backend/issues/50)) ([5bb5672](https://github.com/cujarrett/glimpse-backend/commit/5bb5672f0984509dea7d7d6102cdc59ff374a8fe))
+
 ## [0.7.15](https://github.com/cujarrett/glimpse-backend/compare/v0.7.14...v0.7.15) (2021-11-03)
 
 
