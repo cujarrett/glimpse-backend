@@ -2,6 +2,20 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+# [0.9.0](https://github.com/cujarrett/glimpse-backend/compare/v0.8.0...v0.9.0) (2021-11-26)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @semantic-release/commit-analyzer ([#55](https://github.com/cujarrett/glimpse-backend/issues/55)) ([052683a](https://github.com/cujarrett/glimpse-backend/commit/052683a40ee53c13030037e90257d922c5d445bd))
+* **deps-dev:** bump @semantic-release/release-notes-generator ([#56](https://github.com/cujarrett/glimpse-backend/issues/56)) ([91bbb09](https://github.com/cujarrett/glimpse-backend/commit/91bbb0979770327ea7e21acc177fdeb332f49d17))
+* **deps-dev:** bump eslint from 8.2.0 to 8.3.0 ([#54](https://github.com/cujarrett/glimpse-backend/issues/54)) ([2771a2e](https://github.com/cujarrett/glimpse-backend/commit/2771a2effbcd255ee074ef37c5ff0fe9f8798715))
+
+
+### Features
+
+* removes dependabot auto merge ([#58](https://github.com/cujarrett/glimpse-backend/issues/58)) ([8e8d3a8](https://github.com/cujarrett/glimpse-backend/commit/8e8d3a8ac35a84ea552aafc35a2fa92913d0e10a))
+
 # [0.8.0](https://github.com/cujarrett/glimpse-backend/compare/v0.7.19...v0.8.0) (2021-11-25)
 
 
