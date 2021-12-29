@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.10.7](https://github.com/cujarrett/glimpse-backend/compare/v0.10.6...v0.10.7) (2021-12-29)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @commitlint/cli from 15.0.0 to 16.0.1 ([#67](https://github.com/cujarrett/glimpse-backend/issues/67)) ([ff76d58](https://github.com/cujarrett/glimpse-backend/commit/ff76d58e3079dcb399b8d139350ec6b0b6d5ed1f))
+
 ## [0.10.6](https://github.com/cujarrett/glimpse-backend/compare/v0.10.5...v0.10.6) (2021-12-29)
 
 
