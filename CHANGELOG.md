@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.10.11](https://github.com/cujarrett/glimpse-backend/compare/v0.10.10...v0.10.11) (2022-01-10)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump ava from 4.0.0 to 4.0.1 ([#71](https://github.com/cujarrett/glimpse-backend/issues/71)) ([d3fbd5d](https://github.com/cujarrett/glimpse-backend/commit/d3fbd5dab7cdf4b1eaee2f21a65b2f2205bab895))
+
 ## [0.10.10](https://github.com/cujarrett/glimpse-backend/compare/v0.10.9...v0.10.10) (2022-01-10)
 
 
