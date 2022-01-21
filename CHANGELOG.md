@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+# [0.11.0](https://github.com/cujarrett/glimpse-backend/compare/v0.10.14...v0.11.0) (2022-01-21)
+
+
+### Features
+
+* adds dependabot terraform support ([#76](https://github.com/cujarrett/glimpse-backend/issues/76)) ([b152d83](https://github.com/cujarrett/glimpse-backend/commit/b152d83fd6dfa363ea80a2acaecdd233816c1efa))
+
 ## [0.10.14](https://github.com/cujarrett/glimpse-backend/compare/v0.10.13...v0.10.14) (2022-01-19)
 
 
