@@ -1,8 +1,9 @@
-const api = require("lambda-api")()
-const { github } = require("./src/routes/github.js")
+import createApi from "lambda-api"
+import { github } from "./src/routes/github.js"
 
+const api = createApi()
 api.register(github)
 
-exports.handler = async (event, context) => {
-  return api.run(event, context)
+export const handler = async (event, context) => {
+  return await api.run(event, context)
 }

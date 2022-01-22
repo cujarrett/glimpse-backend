@@ -2,12 +2,17 @@
   "name": "glimpse-backend",
   "version": "0.12.0",
   "description": "Backend for glimpse.ninja app",
+  "type": "module",
+  "exports": "./index.js",
+  "engines": {
+    "node": "^12.20.0 || ^14.13.1 || >=16.0.0"
+  },
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
     "fix-lint": "eslint . --fix",
-    "test": "nyc ava",
-    "build": "npm install --production && rm -rf build && mkdir build && zip -r -q -x='*test*' -x='package-lock.json' -x='*media*' -x='*terraform*' -x=*coverage* -x='*.md' -x='LICENSE' -x='*build*' -x='*.DS_Store*' -x='*.git*' -x='release.config.js' -x='commitlint.config.js' build/glimpse-backend.zip . && du -sh build",
+    "test": "c8 ava",
+    "build": "npm set-script prepare '' && npm install --production && rm -rf build && mkdir build && zip -r -q -x='*test*' -x='package-lock.json' -x='*media*' -x='*terraform*' -x=*coverage* -x='*.md' -x='LICENSE' -x='*build*' -x='*.DS_Store*' -x='*.git*' -x='release.config.js' -x='commitlint.config.js' build/glimpse-backend.zip . && npm set-script prepare 'husky install' && du -sh build",
     "deploy": "aws lambda update-function-code --function-name=glimpse-backend --zip-file=fileb://build/glimpse-backend.zip --region=us-east-1 1> /dev/null",
     "semantic-release": "semantic-release",
     "ci": "npm run lint && npm run test",
@@ -32,7 +37,7 @@
   "homepage": "https://github.com/cujarrett/glimpse-backend#readme",
   "dependencies": {
     "lambda-api": "~0.11.2",
-    "node-fetch": "~2.6.7"
+    "node-fetch": "~3.2.0"
   },
   "devDependencies": {
     "@commitlint/cli": "~16.1.0",
@@ -45,11 +50,11 @@
     "@semantic-release/npm": "~9.0.0",
     "@semantic-release/release-notes-generator": "~10.0.3",
     "ava": "~4.0.1",
+    "c8": "~7.11.0",
     "commitizen": "~4.2.4",
     "cz-conventional-changelog": "~3.3.0",
     "eslint": "~8.7.0",
-    "husky": "~7.0.4",
-    "nyc": "~15.1.0"
+    "husky": "~7.0.4"
   },
   "husky": {
     "hooks": {
