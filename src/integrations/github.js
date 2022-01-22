@@ -1,6 +1,6 @@
-const fetch = require("node-fetch")
+import fetch from "node-fetch"
 
-module.exports.getContributionYears = async (username) => {
+export const getContributionYears = async (username) => {
   const contributionYearsRegularExpression = /year-link-\d{4}/g
   const url = `https://github.com/${username}`
   const response = await fetch(url)
@@ -14,7 +14,7 @@ module.exports.getContributionYears = async (username) => {
   return contributionYears
 }
 
-module.exports.getRawContributionData = async (username, contributionYears) => {
+export const getRawContributionData = async (username, contributionYears) => {
   const output = []
   for (const year of contributionYears) {
     // eslint-disable-next-line max-len

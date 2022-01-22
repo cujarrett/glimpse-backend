@@ -1,7 +1,6 @@
-const { name } = require("../../package.json")
-const { getContributionYears, getRawContributionData } = require("../integrations/github.js")
+import { getContributionYears, getRawContributionData } from "../integrations/github.js"
 
-module.exports.getFormattedContributionsByYear = (contributions) => {
+export const getFormattedContributionsByYear = (contributions) => {
   let years = []
   for (const contribution of contributions) {
     const year = contribution.date.substring(0, 4)
@@ -80,23 +79,22 @@ module.exports.getFormattedContributionsByYear = (contributions) => {
   return output
 }
 
-module.exports.github = async (api) => {
+export const github = async (api) => {
   api.get("/github", async (request, response) => {
     try {
+      // eslint-disable-next-line no-console
       console.log("/github called")
       response.header("Access-Control-Allow-Origin", "*")
       const { username } = request.query
       const years = await getContributionYears(username)
       const rawContributionData = await getRawContributionData(username, years)
-      const contributions = this.getFormattedContributionsByYear(rawContributionData)
+      const contributions = getFormattedContributionsByYear(rawContributionData)
       const result = {
-        contributions,
-        metadata: {
-          name
-        }
+        contributions
       }
       return JSON.stringify(result, null, "  ")
     } catch (error) {
+      // eslint-disable-next-line no-console
       console.log(error)
     }
   })

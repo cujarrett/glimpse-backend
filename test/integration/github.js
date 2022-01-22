@@ -1,5 +1,5 @@
-const test = require("ava")
-const { getContributionYears, getRawContributionData } = require("../../src/integrations/github.js")
+import test from "ava"
+import { getContributionYears, getRawContributionData } from "../../src/integrations/github.js"
 
 test("Integration - GitHub", async (assert) => {
   let contributionYears = await getContributionYears("cujarrett")

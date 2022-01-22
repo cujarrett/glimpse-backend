@@ -1,5 +1,5 @@
-const test = require("ava")
-const { getFormattedContributionsByYear } = require("../../src/routes/github.js")
+import test from "ava"
+import { getFormattedContributionsByYear } from "../../src/routes/github.js"
 
 test("Unit - contributions", async (assert) => {
   const mockInput = [
