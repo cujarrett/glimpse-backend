@@ -1,4 +1,19 @@
 # Changelog
+All notable changes to this project will be documented in this file. This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+# [1.0.0](https://github.com/cujarrett/glimpse-backend/compare/v0.12.0...v1.0.0) (2022-01-22)
+
+
+* BREAKING CHANGE: migrates from commonjs to esm (#77) ([67ec1ec](https://github.com/cujarrett/glimpse-backend/commit/67ec1ec0b2f87270beffb2f7867202ae5123e1cb)), closes [#77](https://github.com/cujarrett/glimpse-backend/issues/77)
+
+
+### BREAKING CHANGES
+
+* requires at least Node.js 12.20.0, 14.13.1, 16.0.0. Node.js 10 is no longer supported.
+
+* fix(deps): updates node-fetch  ~2.6.7  →  ~3.2.0
+
+# Changelog
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
