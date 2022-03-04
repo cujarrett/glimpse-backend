@@ -1,6 +1,13 @@
 # Changelog
 All notable changes to this project will be documented in this file. This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.2](https://github.com/cujarrett/glimpse-backend/compare/v1.0.1...v1.0.2) (2022-03-04)
+
+
+### Bug Fixes
+
+* updates dependencies ([#83](https://github.com/cujarrett/glimpse-backend/issues/83)) ([6db099d](https://github.com/cujarrett/glimpse-backend/commit/6db099d4f80c3fa543d2c0ec17a90b17ecd82cf1))
+
 ## [1.0.1](https://github.com/cujarrett/glimpse-backend/compare/v1.0.0...v1.0.1) (2022-02-02)
 
 
